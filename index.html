@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Play the exciting Guess the Number game! Test your skills by guessing the hidden number within a range. Fun, challenging, and perfect for all ages. Try to beat your high score and improve your guessing strategy with each game. Play now and enjoy endless entertainment!"
+    />
+    <title>Guess the number!</title>
+
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      href="img/apple-touch-icon.png"
+      type="image/png"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess The Number!</h1>
+      <p class="between">(0-9)</p>
+      <div class="question">
+        <p></p>
+        <span>?</span>
+        <p></p>
+      </div>
+      <button class="new-game">Start New Game!</button>
+      <div class="game">
+        <div class="result">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">💯 Score: <span class="score"></span></p>
+          <p class="label-highscore">
+            🥇 High Score: <span class="highscore">0</span>
+          </p>
+        </div>
+        <div class="try">
+          <input type="number" class="guess" disabled />
+          <button class="check" disabled>Check!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
